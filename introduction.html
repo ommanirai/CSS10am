@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- 
+    CSS
+    cascading style sheet
+    syntax:
+    <style>
+    selector
+    {
+        attrubute: value;
+        attribute: value;
+        attribute: value;
+        attribute: value;
+    },
+    selector{
+        attrubute: value;
+        attribute: value;
+        attribute: value;
+        attribute: value;
+    }
+    </style>
+
+    types of selector:
+    1. element selector: 
+    -> all the html elements
+    -> start with tag
+
+    2. class selector
+    -> user defined classes
+    -> start with dot(.)
+
+    3. id selector
+    -> user defined id's
+    => start with hash(#)
+
+    PRIORITY:
+    ID SELECTOR > CLASS SELECTOR > ELEMENT SELECTOR
+
+    -->
+    <style>
+        h2
+        {
+            color: green;
+        }
+        .first{
+            background-color: black;
+            color: green;
+        }
+        .headings{
+            background-color: gray;
+            color: red;
+        }
+        #demo{
+            /* text-align: center; */
+            /* color: yellow; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2 id="demo" class="first headings" >Heading Second</h2>
+    <h1 id="demo1" class="first">Heading First</h1>
+</body>
+
+</html>
