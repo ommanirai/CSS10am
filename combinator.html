@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        /* p{
+            color: red;
+        }
+        h1{
+            color: red;
+        }
+        .container{
+            color: red;
+        } */
+        /* Combinator
+        types of combinator:
+        1. grouping selector (,)
+        2. descendent selector(space)
+        3. child selector(>)
+        4. general sibling selector(tild operator(~))
+        5. ajdacent sibling selector (+)
+        */
+
+        /* grouping selector (,)
+        */
+        p,
+        h1,
+        .container {
+            color: aqua;
+        }
+
+        /* descendent selector(space)
+         */
+        .parent div {
+            color: red;
+        }
+
+        /* child selector (>) */
+        .parent>div {
+            color: blue;
+        }
+
+        /* general siblings selector(~) */
+        .grandchild1~div {
+            background-color: black;
+        }
+
+        /* adjacent sibling selector(+) */
+        .grandchild1+div {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, laudantium!</p>
+    <h1>Heading first</h1>
+    <div class="container">
+        division first
+    </div>
+    <div class="parent">
+        <div class="child1">child first
+            <div class="grandchild1">grand child first</div>
+            <div class="grandchild2">grand child second</div>
+            <div class="grandchild3">grand child third</div>
+            <div class="grandchild4">grand child fourth</div>
+        </div>
+        <div class="child2">child second</div>
+        <div class="child3">child third</div>
+    </div>
+</body>
+
+</html>
